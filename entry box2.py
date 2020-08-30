@@ -11,11 +11,11 @@ root.iconbitmap('D:/anji_python software/python/anji tkinter projects/resources/
 root.geometry('600x400')
 
 def myclick():
-    hello = "Hello " + e.get()
-    mylabel=Label(root,text=hello)
+    hello = "Hello Wellcome  " + e.get()
+    mylabel=Label(root,text=hello, font=('Helvetica',15), bg="pink" , fg="blue")
     mylabel.pack(pady=10)
 
-e = Entry(root, width = 50)
+e = Entry(root, width = 50, font=('Helvetica',30))
 e.pack(padx=10,pady=10)
 
 myButton = Button(root,text="Enter you Name", command =myclick)
